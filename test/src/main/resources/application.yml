@@ -1,0 +1,26 @@
+server:
+  port: 8080
+spring:
+  datasource:
+      driver-class-name:
+      url: jdbc:mysql://localhost:3306/mydemo1?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=Asia/Shanghai
+      username: root
+      password: 1234
+
+
+logging:
+  level:
+    com:
+      yao:
+        test:
+          controller: DEBUG
+          service: DEBUG
+          mapper: DEBUG
+#JWT配置
+yao:
+  jwt:
+    secret-key: yao123
+    ttl: 1800000
+    token-name: token
+
+
